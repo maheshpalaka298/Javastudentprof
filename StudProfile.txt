@@ -1,0 +1,63 @@
+//To Demonestrate the reading of input from the user to Classes//
+import java.util.Scanner;
+class  StudProfile
+{
+	public static void main(String[] args) 
+	{
+		Scanner obj=new Scanner(System.in);
+		    String id,name,branch;
+			int age;
+			float height;
+			char gender;
+			long mobile;
+			boolean married;
+
+ System.out.println("Enter student id,name,branch,gender,age,height,married status and mobile");
+ id=obj.next();
+ obj.nextLine();
+ name=obj.nextLine();
+ branch=obj.nextLine();
+ gender=obj.next().charAt(0);
+ age=obj.nextInt();
+ height=obj.nextFloat();
+ married=obj.nextBoolean();
+ mobile=obj.nextLong();
+
+System.out.println("===================");
+System.out.println("STUDENT PROFILE");
+System.out.println("====================================");
+System.out.println("ID = "+id);
+System.out.println("NAME = "+name);
+System.out.println("BRANCH = "+branch);
+System.out.println("GENDER = "+gender);
+System.out.println("AGE = "+age);
+System.out.println("HEIGHT = "+height);
+System.out.println("MARRIED STATUS = "+married);
+System.out.println("MOBILE = "+mobile);
+System.out.println("=========================================");
+
+}
+}
+#Output
+Enter student id,name,branch,gender,age,height,married status and mobile
+20A91A04P1
+Mahesh
+ECED
+male
+20
+155.5
+false
+9182522933
+===================
+STUDENT PROFILE
+====================================
+ID = 20A91A04P1
+NAME = Mahesh
+BRANCH = ECED
+GENDER = m
+AGE = 20
+HEIGHT = 155.5
+MARRIED STATUS = false
+MOBILE = 9182522933
+=========================================
+Press any key to continue . . .
